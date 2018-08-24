@@ -21,7 +21,6 @@ div {
     stu_prof_cou.grade.empty?
 end %>
 <br/><br/>
-
   <h4 class="text-info">Current Courses</h4>
   <table class="table table-hover">
     <thead>
@@ -33,7 +32,6 @@ end %>
       </tr>
     </thead>
     <tbody>
-
       <% @first_table.each do |stu_prof_cou| %>
         <td><%= link_to stu_prof_cou.professor_course.course.title, course_path(stu_prof_cou.professor_course.course), class: 'text-warning' %></td>
         <td><%= link_to stu_prof_cou.professor_course.professor.full_name, prof_bio_path(stu_prof_cou.professor_course.professor.id), class: 'text-warning' %></td>
@@ -42,10 +40,9 @@ end %>
           <%= link_to "Drop Course", "/student_professor_courses/#{stu_prof_cou.id}/drop_from_my_courses", method: "delete", class: "btn btn-primary-outline text-warning", style: "background-color:transparent" %>
         </td>
       </tr>
-      <% end %>
-    </tbody>
-  </table>
-
+    <% end %>
+  </tbody>
+</table>
 <br/>
 
 <h4 class="text-info">Past Courses</h4>
