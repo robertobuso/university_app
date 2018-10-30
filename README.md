@@ -15,8 +15,7 @@ Administrative information system with role-based permissions and full CRUD capa
 
 
 ## Built With
-- Ruby on Rails
-- MVC
+- Ruby on Rails MVC framework
 - Sqlite3 Database using ActiveRecord
 - Bcrypt for authentication
 - Bootstrap
